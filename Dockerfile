@@ -10,7 +10,8 @@ RUN mkdir /world && chown terraria:terraria /world
 USER terraria
 WORKDIR /home/terraria
 
-ARG DOWNLOAD_LINK=https://terraria.org/system/dedicated_servers/archives/000/000/037/original/terraria-server-1403.zip?1590018631
+# https://terraria.gamepedia.com/Server#Downloads
+ARG DOWNLOAD_LINK=https://www.terraria.org/system/dedicated_servers/archives/000/000/038/original/terraria-server-1404.zip?1590253816
 RUN wget --quiet -O /tmp/terraria-server.zip "${DOWNLOAD_LINK}" && \
   unzip -qq /tmp/terraria-server.zip -d terraria-server && \
   rm /tmp/terraria-server.zip && \
