@@ -11,7 +11,7 @@ USER terraria
 WORKDIR /home/terraria
 
 # https://terraria.gamepedia.com/Server#Downloads
-ARG DOWNLOAD_LINK=https://www.terraria.org/system/dedicated_servers/archives/000/000/038/original/terraria-server-1404.zip?1590253816
+ARG DOWNLOAD_LINK=https://www.terraria.org/system/dedicated_servers/archives/000/000/039/original/terraria-server-1405.zip?1591301368
 RUN wget --quiet -O /tmp/terraria-server.zip "${DOWNLOAD_LINK}" && \
   unzip -qq /tmp/terraria-server.zip -d terraria-server && \
   rm /tmp/terraria-server.zip && \
